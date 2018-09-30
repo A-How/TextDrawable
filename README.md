@@ -1,4 +1,6 @@
-###TextDrawable 
+本库可以很方便的创建出Drawable来使用，由于作者长久没有维护，导致直接Clone下来，编译出错，主要是版本较老。在此，我编译成功后，更新后便于以后扩展
+-------------------------------------------------------------------
+###TextDrawable
 This light-weight library provides images with letter/text like the Gmail app. It extends the `Drawable` class thus can be used with existing/custom/network `ImageView` classes. Also included is a [fluent interface](http://en.wikipedia.org/wiki/Fluent_interface) for creating drawables and a customizable `ColorGenerator`.
 
 <p align="center"><img src ="https://github.com/amulyakhare/TextDrawable/blob/master/screens/screen1-material.png" width="350"/>

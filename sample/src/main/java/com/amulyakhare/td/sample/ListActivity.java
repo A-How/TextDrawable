@@ -3,7 +3,7 @@ package com.amulyakhare.td.sample;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
-import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
@@ -19,11 +19,13 @@ import com.amulyakhare.textdrawable.util.ColorGenerator;
 import java.util.Arrays;
 import java.util.List;
 
-public class ListActivity extends ActionBarActivity {
+public class ListActivity extends AppCompatActivity {
 
     private static final int HIGHLIGHT_COLOR = 0x999be6ff;
 
-    // list of data items
+    /**
+     * list of data items
+      */
     private List<ListData> mDataList = Arrays.asList(
             new ListData("Iron Man"),
             new ListData("Captain America"),
@@ -43,7 +45,9 @@ public class ListActivity extends ActionBarActivity {
             new ListData("Plums")
     );
 
-    // declare the color generator and drawable builder
+    /**
+     * declare the color generator and drawable builder
+      */
     private ColorGenerator mColorGenerator = ColorGenerator.MATERIAL;
     private TextDrawable.IBuilder mDrawableBuilder;
 
@@ -93,7 +97,7 @@ public class ListActivity extends ActionBarActivity {
         }
 
         // init the list view and its adapter
-        ListView listView = (ListView) findViewById(R.id.listView);
+        ListView listView =  findViewById(R.id.listView);
         listView.setAdapter(new SampleAdapter());
     }
 
